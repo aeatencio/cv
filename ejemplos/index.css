@@ -1,12 +1,28 @@
+body {
+    background-color: gainsboro;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 3rem;
+    row-gap: 3rem;
+    justify-content: center;
+}
+
+.example-title {
+    text-transform: uppercase;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    line-height: 3;
 }
 
 .gallery__item {
     margin: 0;
-    max-width: 22rem;
+    max-width: 33rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .gallery__img {
