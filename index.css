@@ -1,8 +1,8 @@
 body {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
-    min-width: 320px;
-    max-width: 1240px;
+    min-width: 20rem;
+    max-width: 77.5rem;
     margin: auto;
     padding: 0 2rem;
 }
@@ -86,7 +86,7 @@ ul {
     gap: 2rem;
 }
 
-@media only screen and (min-width: 48rem) {
+@media (min-width: 48rem) {
     body {
         padding: 0 5rem;
     }
@@ -94,14 +94,14 @@ ul {
     .nombre-avatar {
         flex-direction: row-reverse;
         justify-content: center;
-        border-left: 5px solid;
+        border-left: 0.3125rem solid;
         padding-top: 4rem;
         margin-bottom: 4rem;
     }
 
     .nombre-apellido-titulo {
         padding-bottom: 5rem;
-        border-bottom: 2.5px solid;
+        border-bottom: 0.15625rem solid;
         flex: 2 1 0;
     }
 
