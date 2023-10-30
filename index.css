@@ -1,9 +1,130 @@
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0 5rem;
+    min-width: 320px;
+    max-width: 1240px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nombre-avatar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-left: 5px solid;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 .avatar {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
+.nombre {
+    font-weight: lighter;
+}
+
+.apellido {
+    font-size: 3rem;
+    font-weight: bolder;
+    display: block;
+}
+
+.nombre-apellido, .titulo {
+    padding: 0;
+}
+
+.nombre-apellido-titulo {
+    padding-bottom: 5rem;
+    border-bottom: 5px solid;
+    flex: 2 1 0;
+}
+
+.contacto {
+    flex: 1 1 0;
+}
+
+.sobre-mi {
+    flex: 2 1 0;
+}
+
+.contacto ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.introduccion {
+    display: flex;
+}
+
+.en-construccion {
+    opacity: 0.5;
+    margin-top: 10rem;
+}
+
+.nombre-avatar, .introduccion {
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0 2rem;
+    }
+
+    .nombre-avatar {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        gap: 1rem;
+        border: unset;
+        padding: unset;
+        margin-bottom: 2rem;
+    }
+
+    .nombre-apellido-titulo {
+        border: unset;
+        padding: unset;
+    }
+
+    .avatar {
+        display: unset;
+    }
+
+    .introduccion {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
