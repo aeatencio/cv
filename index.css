@@ -1,5 +1,9 @@
-/* .avatar {
+.avatar {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-} */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
