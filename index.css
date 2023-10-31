@@ -180,6 +180,15 @@ ul {
         position: absolute;
         margin: 1.6rem 0 0 -1.6rem;
     }
+
+    .habilidades ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .habilidades a {
+        text-decoration: underline;
+    }
 }
 
 @media only screen and not (min-width: 64rem) {
