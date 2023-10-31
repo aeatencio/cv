@@ -30,27 +30,6 @@ ul {
     padding: 0;
 }
 
-button {
-    background-color: white;
-    color: black;
-    border: 0.15625rem solid;
-    padding: 1rem 7rem;
-    font-size: x-large;
-    border-radius: 2rem;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.button-row {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
 .nombre-avatar {
     display: flex;
     flex-direction: column;

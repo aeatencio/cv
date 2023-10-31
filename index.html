@@ -3,24 +3,7 @@
 <link rel="stylesheet" type="text/css" href="index.css" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<script src="html2pdf.bundle.min.js"></script>
-<script>
-    function toPDF() {
-        var cv = document.querySelector('.cv');
-        var opt = {
-            margin: [1, 1],
-            filename: 'Andrés Atencio (Profesor de Programación) CV.pdf',
-            image: { type: 'jpeg', quality: 0.98 },
-            jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' },
-        };
-        html2pdf().set(opt).from(cv).save();
-    };
-</script>
-<title>Andrés Atencio (Profesor de Programación)</title>
-
-<div class="button-row">
-    <button onclick="toPDF()">Descargar PDF</button>
-</div>
+<title>Andrés Atencio (Profesor de Programación) Currículum Vitae</title>
 
 <div class="cv">
     <div class="nombre-avatar">
