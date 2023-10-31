@@ -1,6 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
     min-width: 20rem;
     max-width: 77.5rem;
     margin: auto;    
@@ -74,10 +77,6 @@ ul {
     gap: 1rem;
 }
 
-.en-construccion {
-    display: none;
-}
-
 @media (min-width: 64rem), print {
     body {
         padding: 0 5rem;
@@ -130,6 +129,47 @@ ul {
     .introduccion {
         flex-direction: row;
         gap: 2rem;
+        border-bottom: 0.15rem solid;
+        padding-bottom: 2rem;
+    }
+
+    .desarrollo {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+    }
+
+    .desarrollo h2 {
+        text-decoration: underline;
+    }
+
+    .desarrollo h3 {
+        letter-spacing: unset;
+    }
+
+    .experiencia {
+        flex: 2 1 0;
+    }
+
+    .formacion {
+        flex: 1 1 0;
+    }
+
+    .trabajos {
+        margin-left: 2rem;
+    }
+
+    /* Puntos de la línea de tiempo */
+    .trabajos li::before {
+        content: '';
+        width: 0.4rem;
+        height: 0.4rem;
+        background-color: black;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        margin: 1.6rem 0 0 -1.6rem;
     }
 }
 
@@ -143,6 +183,7 @@ ul {
     size: A4;
     margin: 0;
 }
+
 @media print {
     html, body {
         width: 210mm;
@@ -168,5 +209,10 @@ ul {
 
     .nombre-apellido-titulo {
         padding-bottom: 1rem;
+    }
+
+    /* Puntos de la línea de tiempo */
+    .trabajos li::before {
+        margin-top: 1.2rem;
     }
 }
