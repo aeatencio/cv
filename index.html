@@ -7,8 +7,13 @@
 <script>
     function toPDF() {
         var cv = document.querySelector('.cv');
-        pdf = html2pdf(cv);
-        console.log(pdf);
+        var opt = {
+            margin: '27mm 16mm',
+            filename: 'Andrés Atencio (Profesor de Programación) CV.pdf',
+            html2canvas: { width: '21cm', height: '29.7cm' },
+            jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().from(cv).set(opt).save();
     };
 </script>
 <title>Andrés Atencio (Profesor de Programación)</title>
