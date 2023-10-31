@@ -6,16 +6,18 @@
 <script src="html2pdf.bundle.min.js"></script>
 <script>
     function toPDF() {
-        var cv = document.getElementById('cv-es');
+        var cv = document.querySelector('.cv');
         pdf = html2pdf(cv);
         console.log(pdf);
     };
 </script>
 <title>Andrés Atencio (Profesor de Programación)</title>
 
-<button onclick="toPDF()">PDF</button>
+<div class="button-row">
+    <button onclick="toPDF()">Descargar PDF</button>
+</div>
 
-<div id="cv-es">
+<div class="cv">
     <div class="nombre-avatar">
         <div class="nombre-apellido-titulo">
             <h1 class="nombre-apellido">

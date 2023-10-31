@@ -4,34 +4,6 @@ body {
     min-width: 20rem;
     max-width: 77.5rem;
     margin: auto;
-    padding: 0 2rem;
-}
-
-button {
-    background-color: black;
-    color: white;
-    padding: 1rem 7rem;
-    font-size: xx-large;
-    border: none;
-}
-
-button:hover {
-    background-color: gainsboro;
-    color: black;
-    cursor: pointer;
-}
-
-.nombre-avatar {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.introduccion {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 h1, h2, h3 {
@@ -55,6 +27,44 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 0.15625rem solid;
+    padding: 1rem 7rem;
+    font-size: x-large;
+    border-radius: 2rem;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.cv {
+    padding: 0 2rem;
+}
+
+.nombre-avatar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.introduccion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .avatar img {
