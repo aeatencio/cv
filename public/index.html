@@ -4,15 +4,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <script src="html2pdf.bundle.min.js"></script>
-<script src="html2canvas.min.js"></script>
 <script>
     function toPDF() {
         var cv = document.querySelector('.cv');
         var opt = {
-            margin: [0.27, 0.16],
+            margin: [1, 1],
             filename: 'Andrés Atencio (Profesor de Programación) CV.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { width: '21cm', height: '29.7cm' },
             jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait' },
         };
         html2pdf().set(opt).from(cv).save();

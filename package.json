@@ -1,7 +1,24 @@
 {
-  "type": "module",
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "dependencies": {
-    "html2canvas": "^1.4.1",
-    "html2pdf.js": "^0.10.1"
-  }
+    "http-server": "^14.1.1",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeatencio/cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeatencio/cv/issues"
+  },
+  "homepage": "https://github.com/aeatencio/cv#readme"
 }
