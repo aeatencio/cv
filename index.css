@@ -3,7 +3,8 @@ body {
     box-sizing: border-box;
     min-width: 20rem;
     max-width: 77.5rem;
-    margin: auto;
+    margin: auto;    
+    padding: 0 2rem;
 }
 
 h1, h2, h3 {
@@ -48,10 +49,6 @@ button:hover {
     display: flex;
     justify-content: center;
     margin: 2rem 0;
-}
-
-.cv {
-    padding: 0 2rem;
 }
 
 .nombre-avatar {
