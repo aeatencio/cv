@@ -7,6 +7,20 @@ body {
     padding: 0 2rem;
 }
 
+button {
+    background-color: black;
+    color: white;
+    padding: 1rem 7rem;
+    font-size: xx-large;
+    border: none;
+}
+
+button:hover {
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}
+
 .nombre-avatar {
     display: flex;
     flex-direction: column;
