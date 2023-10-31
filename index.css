@@ -77,6 +77,16 @@ ul {
     gap: 1rem;
 }
 
+.trabajos .descripcion p {
+    margin: 0;
+}
+
+.trabajo .descripcion {
+    margin-top: 1rem;
+    list-style-type: disc;
+    margin-left: 1.1rem;
+}
+
 @media (min-width: 64rem), print {
     body {
         padding: 0 5rem;
@@ -161,7 +171,7 @@ ul {
     }
 
     /* Puntos de la línea de tiempo */
-    .trabajos li::before {
+    li.trabajo::before {
         content: '';
         width: 0.4rem;
         height: 0.4rem;
