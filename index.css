@@ -32,7 +32,6 @@ ul {
 .nombre-avatar {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
 }
 
 .introduccion {
