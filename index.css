@@ -7,7 +7,7 @@ body {
     min-width: 20rem;
     max-width: 77.5rem;
     margin: auto;    
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 h1, h2, h3 {
@@ -67,7 +67,7 @@ ul {
 }
 
 .sobre-mi {
-    flex: 2 1 0;
+    flex: 1.7 1 0;
 }
 
 .contacto ul li a {
@@ -87,10 +87,6 @@ ul {
 }
 
 @media (min-width: 64rem), print {
-    body {
-        padding: 0 5rem;
-    }
-
     h1, h2, h3 {
         letter-spacing: 0.4rem;
     }
@@ -109,7 +105,7 @@ ul {
         gap: 2rem;
         border-left: 0.3rem solid;
         padding-top: 4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
 
     .nombre-apellido {
@@ -121,7 +117,7 @@ ul {
         flex-direction: column;
         justify-content: center;
         border-bottom: 0.15rem solid;
-        flex: 2 1 0;
+        flex: 1.7 1 0;
         gap: 1rem;
     }
 
@@ -139,11 +135,11 @@ ul {
         flex-direction: row;
         gap: 2rem;
         border-bottom: 0.15rem solid;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 
     .desarrollo {
-        padding-top: 2rem;
+        padding-top: 1rem;
         display: flex;
         flex-direction: row-reverse;
         gap: 2rem;
@@ -158,11 +154,14 @@ ul {
     }
 
     .experiencia {
-        flex: 2 1 0;
+        flex: 1.7 1 0;
     }
 
     .formacion {
         flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .trabajos {
@@ -212,6 +211,10 @@ ul {
         font-size: 0.75rem;
     }
 
+    h2 {
+        margin-bottom: 0.2rem;
+    }
+
     .apellido {
         font-size: 1.5rem;
     }
@@ -222,11 +225,24 @@ ul {
     }
 
     .nombre-avatar {
-        margin-bottom: 1rem;
+        padding-top: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .nombre-apellido-titulo {
         padding-bottom: 1rem;
+    }
+
+    .introduccion {
+        padding-bottom: 0.5rem;
+    }
+
+    .desarrollo {
+        padding-top: 0.5rem;
+    }
+
+    .formacion {
+        gap: 1rem;
     }
 
     /* Puntos de la línea de tiempo */
