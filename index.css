@@ -63,11 +63,11 @@ ul {
 }
 
 .contacto {
-    flex: 1 1 0;
+    flex: 1.1 1 0;
 }
 
 .sobre-mi {
-    flex: 1.7 1 0;
+    flex: 1.6 1 0;
 }
 
 .contacto ul li a {
@@ -86,7 +86,22 @@ ul {
     margin-left: 1.1rem;
 }
 
-@media (min-width: 64rem), print {
+.educacion .otras ul {
+    margin-top: 1rem;
+    list-style-type: disc;
+    margin-left: 1.1rem;
+}
+
+.habilidades ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.habilidades a {
+    text-decoration: underline;
+}
+
+@media (min-width: 72rem), print {
     h1, h2, h3 {
         letter-spacing: 0.4rem;
     }
@@ -105,7 +120,7 @@ ul {
         gap: 2rem;
         border-left: 0.3rem solid;
         padding-top: 4rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .nombre-apellido {
@@ -116,8 +131,9 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 1rem;
         border-bottom: 0.15rem solid;
-        flex: 1.7 1 0;
+        flex: 1.6 1 0;
         gap: 1rem;
     }
 
@@ -126,7 +142,7 @@ ul {
     }
 
     .avatar {
-        flex: 1 1 0;
+        flex: 1.1 1 0;
         display: flex;
         justify-content: center;
     }
@@ -135,11 +151,11 @@ ul {
         flex-direction: row;
         gap: 2rem;
         border-bottom: 0.15rem solid;
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .desarrollo {
-        padding-top: 1rem;
         display: flex;
         flex-direction: row-reverse;
         gap: 2rem;
@@ -154,14 +170,14 @@ ul {
     }
 
     .experiencia {
-        flex: 1.7 1 0;
+        flex: 1.6 1 0;
     }
 
     .formacion {
-        flex: 1 1 0;
+        flex: 1.1 1 0;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .trabajos {
@@ -179,18 +195,9 @@ ul {
         position: absolute;
         margin: 1.6rem 0 0 -1.6rem;
     }
-
-    .habilidades ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .habilidades a {
-        text-decoration: underline;
-    }
 }
 
-@media only screen and not (min-width: 64rem) {
+@media only screen and not (min-width: 72rem) {
     h2 {
         text-decoration: underline;
     }    
@@ -210,42 +217,17 @@ ul {
         font-size: 0.75rem;
     }
 
-    h2 {
-        margin-bottom: 0.5rem;
-    }
-
-    .habilidades h2 {
-        margin-bottom: 1.5rem;
-    }
-
     .apellido {
         font-size: 1.5rem;
     }
 
     .avatar img {
-        width: 6rem;
-        height: 6rem;
+        width: 9rem;
+        height: 9rem;
     }
 
     .nombre-avatar {
         padding-top: 1rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .nombre-apellido-titulo {
-        padding-bottom: 1rem;
-    }
-
-    .introduccion {
-        padding-bottom: 0.5rem;
-    }
-
-    .desarrollo {
-        padding-top: 0.5rem;
-    }
-
-    .formacion {
-        gap: 1rem;
     }
 
     /* Puntos de la línea de tiempo */
