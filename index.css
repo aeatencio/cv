@@ -198,7 +198,6 @@ ul {
 
 @page {
     size: A4;
-    margin: 0;
 }
 
 @media print {
@@ -212,7 +211,11 @@ ul {
     }
 
     h2 {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .habilidades h2 {
+        margin-bottom: 1.5rem;
     }
 
     .apellido {
