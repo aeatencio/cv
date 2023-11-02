@@ -2,6 +2,7 @@
     --vertical-gap: 2rem;
     --column-1-flex: 1 2 0;
     --column-2-flex: 1.5 1 0;
+    --bottom-vertical-line-width: 0.3rem;
   }
   
 * {
@@ -92,6 +93,10 @@ ul {
     margin-left: 1.1rem;
 }
 
+.proyectos a {
+    text-decoration: underline;
+}
+
 .educacion .otras ul {
     margin-top: 1rem;
     list-style-type: disc;
@@ -101,6 +106,7 @@ ul {
 .habilidades ul {
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 0.4rem;
 }
 
 .habilidades a {
@@ -124,7 +130,7 @@ ul {
         flex-direction: row-reverse;
         justify-content: center;
         gap: var(--vertical-gap);
-        border-left: 0.3rem solid;
+        border-left: var(--bottom-vertical-line-width) solid;
         padding-top: 4rem;
         margin-bottom: 1rem;
     }
@@ -149,6 +155,7 @@ ul {
 
     .avatar {
         flex: var(--column-1-flex);
+        margin-left: calc(var(--bottom-vertical-line-width) * -1);
     }
 
     .avatar img {
