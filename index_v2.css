@@ -113,7 +113,7 @@ ul {
     text-decoration: underline;
 }
 
-@media (min-width: 72rem), print {
+@media (min-width: 74rem), print {
     h1, h2, h3 {
         letter-spacing: 0.4rem;
     }
@@ -203,7 +203,7 @@ ul {
     .linea-de-tiempo {
         width: 0.0625rem;
         background-color: black;
-        margin: 2rem 0 0 0.15rem;
+        margin: 1.9rem 0 0 0.15rem;
     }
 
     /* Puntos de la línea de tiempo */
@@ -215,11 +215,11 @@ ul {
         border-radius: 50%;
         display: block;
         position: absolute;
-        margin: 1.6rem 0 0 -2.25rem;
+        margin: 1.6rem 0 0 -2.2rem;
     }
 }
 
-@media only screen and not (min-width: 72rem) {
+@media only screen and not (min-width: 74rem) {
     h2 {
         text-decoration: underline;
     }    
@@ -264,6 +264,6 @@ ul {
 
     /* Puntos de la línea de tiempo */
     .trabajo::before {
-        margin-top: 1.2rem;
+        margin: 1.2rem 0 0 -2.22rem;
     }
 }
