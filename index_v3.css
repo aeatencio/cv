@@ -39,12 +39,12 @@ ul {
     padding: 0;
 }
 
-.nombre-avatar {
+.introduccion {
     display: flex;
     flex-direction: column;
 }
 
-.introduccion {
+.nombre-avatar {
     display: flex;
     flex-direction: column;
 }
@@ -126,6 +126,14 @@ ul {
         font-size: unset;
     }
 
+    .introduccion {
+        flex-direction: row;
+        gap: var(--vertical-gap);
+        border-bottom: 0.15rem solid;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
     .nombre-avatar {
         flex-direction: row-reverse;
         justify-content: center;
@@ -162,13 +170,9 @@ ul {
         margin-left: 3rem;
     }
 
-    .introduccion {
-        flex-direction: row;
-        gap: var(--vertical-gap);
-        border-bottom: 0.15rem solid;
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
+    .sobre-mi p {
+        font-size: 1.1rem;
+    }    
 
     .desarrollo {
         display: flex;
@@ -182,6 +186,7 @@ ul {
 
     .desarrollo h3 {
         letter-spacing: unset;
+        margin: 1rem 0;
     }
 
     .experiencia {
@@ -215,7 +220,7 @@ ul {
         border-radius: 50%;
         display: block;
         position: absolute;
-        margin: 1.6rem 0 0 -2.2rem;
+        margin: 1.6rem 0 0 -2.22rem;
     }
 }
 
@@ -239,6 +244,11 @@ ul {
         font-size: 0.75rem;
     }
 
+    .introduccion {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
     .apellido {
         font-size: 2.25rem;
     }
@@ -253,9 +263,8 @@ ul {
         padding-top: 1rem;
     }
 
-    .introduccion {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
+    .sobre-mi p {
+        font-size: 0.85rem;
     }
 
     .linea-de-tiempo {
@@ -264,6 +273,6 @@ ul {
 
     /* Puntos de la línea de tiempo */
     .trabajo::before {
-        margin: 1.2rem 0 0 -2.22rem;
+        margin: 1.2rem 0 0 -2.25rem;
     }
 }
