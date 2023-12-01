@@ -88,6 +88,16 @@ ul {
     gap: 1rem;
 }
 
+.desarrollo h3 {
+    letter-spacing: unset;
+    margin-bottom: 0.5rem;
+}
+
+.desarrollo .periodo {
+    margin: 0.5rem 0;
+    opacity: 0.8;
+}  
+
 .trabajos .descripcion p {
     margin: 0;
 }
@@ -123,6 +133,10 @@ ul {
         letter-spacing: 0.4rem;
     }
 
+    .titulo {
+        letter-spacing: unset;
+    }
+
     a {
         font-size: unset
     }
@@ -135,7 +149,7 @@ ul {
         flex-direction: row;
         gap: var(--vertical-gap);
         border-bottom: 0.15rem solid;
-        padding-bottom: 1.5rem;
+        padding-bottom: 3rem;
         margin-bottom: 1.5rem;
     }
 
@@ -187,12 +201,7 @@ ul {
 
     .desarrollo h2 {
         text-decoration: underline;
-    }
-
-    .desarrollo h3 {
-        letter-spacing: unset;
-        margin: 1rem 0;
-    }
+    }  
 
     .experiencia {
         flex: var(--column-2-flex);
@@ -227,6 +236,10 @@ ul {
         position: absolute;
         margin: 1.6rem 0 0 -2.22rem;
     }
+
+    .habilidades {
+        max-width: 25rem;
+    }
 }
 
 @media only screen and not (min-width: 74rem) {
@@ -250,22 +263,32 @@ ul {
     }
 
     .introduccion {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .contacto ul {
+        gap: 0.3rem;
     }
 
     .apellido {
         font-size: 2.25rem;
     }
 
-    .avatar img {
-        width: 9rem;
-        height: 9rem;
+    .avatar {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .avatar img.large {
+        width: 8rem;
+        height: 8rem;
         margin-left: 2.25rem;
     }
 
     .nombre-avatar {
-        padding-top: 1rem;
+        padding-top: 0.5rem;
     }
 
     .sobre-mi p {
@@ -273,11 +296,23 @@ ul {
     }
 
     .linea-de-tiempo {
-        margin-top: 1.3rem;
+        margin-top: 1.2rem;
+    }
+
+    .desarrollo h3 {
+        margin-top: 0.8rem;
     }
 
     /* Puntos de la línea de tiempo */
     .trabajo::before {
-        margin: 1.2rem 0 0 -2.25rem;
+        margin: 1.1rem 0 0 -2.25rem;
+    }
+
+    .habilidades {
+        max-width: 17rem;
+    }
+
+    .trabajo .descripcion {
+        margin-top: 0.5rem;
     }
 }
