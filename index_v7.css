@@ -243,6 +243,15 @@ ul {
         margin: 1.6rem 0 0 -2.22rem;
     }
 
+    .educacion .otras ul {
+        margin-top: 0.5rem;
+        gap: 0;
+    }
+
+    .educacion p {
+        margin: 0.4rem 0;
+    }
+
     .habilidades {
         max-width: 25rem;
     }
@@ -274,7 +283,7 @@ ul {
     }
 
     .apellido {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     .avatar {
@@ -301,8 +310,12 @@ ul {
         margin-top: 1.2rem;
     }
 
-    .desarrollo h3 {
-        margin-top: 0.8rem;
+    h3 {
+        margin-top: 0.4rem;
+    }
+
+    .periodo {
+        margin: 0.2rem 0;
     }
 
     /* Puntos de la línea de tiempo */
