@@ -243,15 +243,6 @@ ul {
         margin: 1.6rem 0 0 -2.22rem;
     }
 
-    .educacion .otras ul {
-        margin-top: 0.5rem;
-        gap: 0;
-    }
-
-    .educacion p {
-        margin: 0.4rem 0;
-    }
-
     .habilidades {
         max-width: 25rem;
     }
@@ -329,5 +320,14 @@ ul {
 
     .trabajo .descripcion {
         margin-top: 0.5rem;
+    }
+
+    .educacion .otras ul {
+        margin-top: 0.5rem;
+        gap: 0;
+    }
+
+    .educacion p {
+        margin: 0.4rem 0;
     }
 }
