@@ -78,7 +78,7 @@ ul {
     flex: var(--column-1-flex);
 }
 
-.sobre-mi {
+.sobre-mi p {
     flex: var(--column-2-flex);
     text-align: justify;
     text-align-last: left;
