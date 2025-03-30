@@ -118,6 +118,12 @@ ul {
     margin-left: 1.1rem;
 }
 
+.caracteristicas {
+    margin-top: 1rem;
+    list-style-type: disc;
+    margin-left: 1.1rem;
+}
+
 .habilidades ul {
     flex-direction: row;
     flex-wrap: wrap;
