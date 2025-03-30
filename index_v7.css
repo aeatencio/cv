@@ -80,6 +80,8 @@ ul {
 
 .sobre-mi {
     flex: var(--column-2-flex);
+    text-align: justify;
+    text-align-last: left;
 }
 
 .contacto ul li a {
