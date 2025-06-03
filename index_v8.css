@@ -332,4 +332,9 @@ ul {
     .educacion p {
         margin: 0.4rem 0;
     }
+    
+    a.subrayado-impresion {
+        text-decoration: underline;
+        color: black;
+    }
 }
